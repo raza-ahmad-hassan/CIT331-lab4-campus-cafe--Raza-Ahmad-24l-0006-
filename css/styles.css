@@ -84,14 +84,6 @@ h1 + p {
   font-size: 1.1rem;
   color: var(--muted);
 }
-
-/* ---------- 4. Header and navigation ---------- */
-.site-header {
-  background: var(--brand-dark);
-  color: #fff;
-  padding: 12px 24px;
-}
-
 .brand {
   color: #fff;
   text-decoration: none;
@@ -319,13 +311,6 @@ input[placeholder]:not(:placeholder-shown):invalid {
 }
 /* ---------- 10. Positioning ---------- */
 
-/* Sticky header */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
 /* Badge positioned inside menu item */
 .menu-item {
   position: relative;
@@ -381,14 +366,6 @@ input[placeholder]:not(:placeholder-shown):invalid {
   color: var(--brand-dark);
   padding: 8px 14px;
   border-radius: 8px;
-}
-/* ---------- 11. Flexbox: header, nav, footer ---------- */
-.site-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
 }
 
 .brand {
@@ -508,11 +485,6 @@ img {
   .hero {
     padding: 32px 20px;
   }
-
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 
 @media (max-width: 480px) {
@@ -530,4 +502,17 @@ img {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--brand-dark);
+  color: #fff;
+  padding: 12px 24px;
 }
