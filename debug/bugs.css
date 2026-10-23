@@ -19,11 +19,11 @@ body {
 }
 
 .btn:hover {
-  background: #0b1f3a
-  cursor pointer;
+  background: #0b1f3a;
+  cursor: pointer;
 }
 
-.notes {
+.note {
   font-style: italic;
-  color: #999999;
+  color: #6b5a4e;
 }

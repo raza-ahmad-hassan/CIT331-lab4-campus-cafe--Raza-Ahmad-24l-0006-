@@ -52,3 +52,18 @@ The `#main p` selector has higher specificity than `.hero p`, so it overrides th
 | Pseudo-class | `a:hover` |
 | Pseudo-element | `a[href^="http"]::after` |
 
+## Bug log (Lab 4, Task 6)
+
+| # | What was wrong (file and line) | Which tool showed it | My fix |
+|---|---|---|---|
+| 1 | `debug/bugs.html` linked to `style.css`, but the actual CSS file was `bugs.css`. | Network tab | Changed `style.css` to `bugs.css`. |
+| 2 | The navigation links were inside a `<div>` instead of a `<nav>` element. | Accessibility tree | Replaced `<div class="menu">` with `<nav class="menu">`. |
+| 3 | The heading jumped from `<h1>` to `<h4>`, skipping heading levels. | Accessibility tree | Changed `<h4>` to `<h2>`. |
+| 4 | The logo image had no `alt` attribute. | Lighthouse accessibility audit | Added `alt="Campus Cafe logo"` to the image. |
+| 5 | The `<html>` element had no language attribute. | Lighthouse accessibility audit | Added `lang="en"` to the `<html>` element. |
+| 6 | The label used `for="mail"`, but the input ID was `email`. | W3C validator / Lighthouse | Changed the label to `for="email"`. |
+| 7 | The CSS used `colour` instead of the correct property `color`. | Styles pane | Changed `colour` to `color`. |
+| 8 | The `.btn:hover` background declaration was missing a semicolon. | Styles pane | Added a semicolon after `background: #0b1f3a`. |
+| 9 | The CSS selector `.notes` did not match the HTML class `.note`. | Styles pane | Changed `.notes` to `.note`. |
+| 10 | The note text color `#999999` had insufficient contrast against the white background. | Lighthouse accessibility audit | Changed the text color to a darker color, such as `#6b5a4e`. |
+
