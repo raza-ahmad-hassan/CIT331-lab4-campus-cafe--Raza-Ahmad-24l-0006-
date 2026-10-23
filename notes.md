@@ -13,3 +13,22 @@
 ## Why is this address http and not https?
 
 Localhost traffic stays on my own computer, so it does not travel across an external network. HTTPS protection is more important when data travels across a network.
+
+## Task 3 — Forms, Validation and localStorage
+
+### HTML Validation Tests
+- Empty name: Browser validation worked.
+- Name shorter than 3 characters: Validation worked.
+- Invalid mobile number: Validation worked.
+- Valid mobile number: Accepted.
+- Invalid quantity: Validation worked.
+- Pickup time outside the allowed range: Validation worked.
+- No item selected: Validation worked.
+
+### localStorage Tests
+- Orders remained saved after refreshing the page.
+- Orders remained saved after navigating to another page.
+- Clear all orders removed the saved orders.
+- Damaged localStorage data did not crash the page.
+- HTML-like input was displayed as plain text.
+
