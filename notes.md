@@ -32,3 +32,23 @@ Localhost traffic stays on my own computer, so it does not travel across an exte
 - Damaged localStorage data did not crash the page.
 - HTML-like input was displayed as plain text.
 
+## Specificity experiment
+
+The `#main p` selector has higher specificity than `.hero p`, so it overrides the hero paragraph color. The `main p` selector has lower specificity than `.hero p`, so the hero paragraph stays white.
+
+## Selectors I used
+
+| Selector kind | Example from my CSS |
+|---|---|
+| Element | `body` |
+| Class | `.card` |
+| ID | `#main` |
+| Grouping | `h1, h2, h3` |
+| Descendant | `.site-footer p` |
+| Child | `form > fieldset` |
+| Adjacent sibling | `h1 + p` |
+| Compound | `a.active` |
+| Attribute | `a[href^="http"]` |
+| Pseudo-class | `a:hover` |
+| Pseudo-element | `a[href^="http"]::after` |
+
