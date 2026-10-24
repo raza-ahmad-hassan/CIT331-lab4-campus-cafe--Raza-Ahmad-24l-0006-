@@ -67,3 +67,28 @@ The `#main p` selector has higher specificity than `.hero p`, so it overrides th
 | 9 | The CSS selector `.notes` did not match the HTML class `.note`. | Styles pane | Changed `.notes` to `.note`. |
 | 10 | The note text color `#999999` had insufficient contrast against the white background. | Lighthouse accessibility audit | Changed the text color to a darker color, such as `#6b5a4e`. |
 
+
+## Live site observations (Lab 4, Task 7)
+
+1. **Compare localhost with the live site.**
+
+   On localhost, the website uses HTTP and runs on my own computer. On the live site, the website uses HTTPS and is hosted by GitHub Pages. The server header, protocol, and Remote Address can differ because the live website is served through GitHub's hosting infrastructure.
+
+   Localhost protocol: [write your observed protocol]
+   Localhost server header: [write your Task 1 value]
+   Localhost Remote Address: [write your Task 1 value]
+   Live protocol: [write the Protocol column value]
+   Live server header: [write the live Response Header value]
+   Live Remote Address: [write the live Network value]
+
+2. **What does the padlock and certificate tell the visitor?**
+
+   The padlock indicates that the connection uses HTTPS and the certificate is valid for the website. HTTPS encrypts data sent between the browser and the website. With plain HTTP, an attacker on the same Wi-Fi could potentially read or modify unencrypted traffic.
+
+3. **Why was the Saved orders table empty on the live site?**
+
+   Local storage belongs to a specific origin, which includes the protocol, hostname, and port. The localhost website and the GitHub Pages website have different origins, so orders saved on localhost do not automatically appear on the live website.
+
+4. **Which status code did the missing page return, and who sent it?**
+
+   The missing page returned HTTP status code [write the code you observed]. The response was sent by [write the server or hosting provider indicated by your observation].
